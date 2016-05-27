@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p> <div id = "fname">First Name:</div></p>
+<p id = "lname">Last Name :</p>
+<p id = "email">Email :</p>
+<p id = "phone">Phone no:</p>
+<p><input type = "submit" id = "get" value= "Get" Onclick = "aa()"></p> 
+
+</body>
+<script>
+
+var person = {
+	firstname: "Mohit",
+	lastname: "Kumar",
+	email: "mohit.909.kr@gmail.com",
+	phone: "7070522101"
+
+};
+
+function aa(){
+document.getElementById("fname").innerHTML = person.firstname;
+document.getElementById("lname").innerHTML = person.lastname;
+document.getElementById("email").innerHTML = person.email;
+document.getElementById("phone").innerHTML = person.phone;
+}
+</script>
+</html>
